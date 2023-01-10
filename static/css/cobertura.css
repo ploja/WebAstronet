@@ -1,0 +1,89 @@
+.cobertura p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+.cobertura {
+    min-width: 330px;
+    max-width: 1040px;
+    padding: 10px;
+    margin: 25px auto;
+    background: transparent;
+}
+
+.cobertura .map__cobertura {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--card-line-separator);
+}
+
+.cobertura .icon__cobertura {
+    display: none;
+}
+
+.cobertura .label__cobertura {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+.label__cobertura:before {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.label__cobertura:hover {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.icon__cobertura:checked+.label__cobertura {
+    color: var(--text-color);
+    border: 1px solid var(--card-line-separator);
+    border-top: 2px solid var(--second-color);
+    border-bottom: 1px solid var(--body-color);
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content1,
+#tab3:checked~#content1,
+#tab4:checked~#content1,
+#tab5:checked~#content1,
+#tab6:checked~#content1,
+#tab7:checked~#content1 {
+    display: block;
+}
+
+@media screen and (max-width: 650px) {
+    .label__cobertura {
+        font-size: 10px;
+    }
+    .label__cobertura:before {
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .label__cobertura {
+        padding: 5px;
+    }
+}
+
+.cobertura .container__map {
+    overflow: hidden;
+    /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+    padding-bottom: 500px;
+    position: relative;
+}
+
+.cobertura .container__map .map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}

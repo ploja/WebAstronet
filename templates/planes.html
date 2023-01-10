@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Astronet - Inicio</title>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../static/img/icono.ico" type="image/x-icon">
+
+    <!--REMIXICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/planes.css">
+    <link rel="stylesheet" href="../static/css/cards.css">
+    <!--
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="../static/css/darkmode.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="../static/css/lightmode.css">
+    -->
+</head>
+
+<body>
+    <!--================HEADER======================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav__logo">
+                <img src="../static/img/logo.png" alt="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../templates/planes.html" class="nav__link active-link">Planes</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../templates/cobertura.html" class="nav__link">Cobertura</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../templates/agencias.html" class="nav__link">Agencias</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../templates/about.html" class="nav__link">Nosotros</a>
+                    </li>
+                </ul>
+
+                <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!-- Toggle Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--================MAIN======================-->
+    <main class="main">
+        <section class="home">
+            <div class="home__shape-small"></div>
+            <div class="home__shape-big-1"></div>
+            <div class="home__shape-big-2"></div>
+            <img src="../static/files/azul-oscuro-2.jpg" alt="" class="home__shape-bg">
+            <div class="home__container container">
+                <div class="home__info">
+                    <h1 class="home__title">
+                        <span>Astronet</span> <br> Planes desde <br><span>$</span><strong>22.39</strong>
+                    </h1>
+                    <p class="home__description">
+                        Conectate al <strong>FUTURO</strong> <br>
+                    </p>
+                    <a href="#" class="home__button">CONTRATAR</a>
+                </div>
+                <div class="home__group">
+                    <div class="home__images">
+                        <div class="home__img-eth">
+                            <img src="../static/img/robot-A.png" alt="home image">
+                        </div>
+                    </div>
+                    <div class="home__data">
+                        <div>
+                            <h2 class="home__data-number">+100</h2>
+                            <span class="home__data-subtitle">Mbps Velocidad</span>
+                        </div>
+                        <div>
+                            <h2 class="home__data-number">24/7</h2>
+                            <span class="home__data-subtitle">Soporte T&eacute;cnico</span>
+                        </div>
+                        <div>
+                            <h2 class="home__data-number">+5</h2>
+                            <span class="home__data-subtitle">Oficinas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__footer">
+                    <div>
+                        <h3 class="home__footer-number">
+                            <a href="tel:0986247908" class="home__footer-number">0986247908</a>
+                        </h3>
+                        <span class="home__footer-subtitle">Servicio al cliente</span>
+                    </div>
+
+                    <div>
+                        <div class="home__footer-time">
+                            <div class="home__footer-counter">
+                                <a href="https://www.instagram.com/astronet.internet/" target="_blank" class="home__footer-counter"><i class="ri-instagram-line"></i></a>
+
+                            </div>
+                            <div class="home__footer-counter">
+                                <a href="https://www.facebook.com/AstroNet.internet" target="_blank" class="home__footer-counter"><i class="ri-facebook-circle-line"></i></a>
+                            </div>
+                        </div>
+                        <span class="home__footer-subtitle">Redes sociales</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--<div class="container__map">
+                    <div class="map" id="map"></div>
+                    </div>
+                    -->
+        <!--======================PLANES SECTION==========================-->
+        <section class="planes section ">
+            <h2 class="section__title">Planes de Internet</h2>
+            <span class="section__subtitle">Tenemos los mejores planes para tu hogar, oficina y negocio</span>
+            <main class="container__planes section__border">
+                <input class="icon__cobertura" id="tab1" type="radio" name="tabs" checked>
+                <label class="label__cobertura" for="tab1">Planes Hogar</label>
+
+                <input class="icon__cobertura" id="tab2" type="radio" name="tabs">
+                <label class="label__cobertura" for="tab2">Planes Super Hogar</label>
+
+                <input class="icon__cobertura" id="tab3" type="radio" name="tabs">
+                <label class="label__cobertura" for="tab3">Planes Corporativos</label>
+
+                <input class="icon__cobertura" id="tab4" type="radio" name="tabs">
+                <label class="label__cobertura" for="tab4">Astronet TV </label>
+
+                <section class="section__plan" id="content1">
+                    <!--==========================CARDS================================-->
+                    <div class="containerC container grid">
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="ri-send-plane-fill fa"></i>
+                                    </div>
+                                    <h3>Estrella</h3>
+                                    <h4><sup>$</sup>22,39<sub>/mes</sub></h4>
+                                    <div class="content-2">
+                                        <ul>
+                                            <li class="info-velocity"><i class="ri-signal-wifi-2-fill"></i>80 Mbs</li>
+                                            <hr>
+                                            <li><i class="ri-check-fill"></i>4 a 5 dispositivos</li>
+                                            <li><i class="ri-check-fill"></i>Instalaci&oacute;n gratis</li>
+                                            <li><i class="ri-check-fill"></i>Redes Sociales</li>
+                                            <li><i class="ri-close-fill"></i>Juegos Online</li>
+                                            <li><i class="ri-close-fill"></i>M&uacute;sica & Pel&iacute;culas</li>
+
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn-accept">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box">
+                                <div class="content"><span class="badge-inverse p-2 position-absolute price-badge">Popular</span>
+                                    <div class="icon">
+                                        <i class="ri-plane-fill fa"></i>
+                                    </div>
+                                    <h3>Astro</h3>
+                                    <h4><sup>$</sup>29,90<sub>/mes</sub></h4>
+                                    <div class="content-2">
+                                        <ul>
+                                            <li class="info-velocity"><i class="ri-signal-wifi-3-fill"></i>110 Mbs</li>
+                                            <hr>
+                                            <li><i class="ri-check-fill"></i>6 a 8 dispositivos</li>
+                                            <li><i class="ri-check-fill"></i>Instalaci&oacute;n gratis</li>
+                                            <li><i class="ri-check-fill"></i>Redes Sociales</li>
+                                            <li><i class="ri-check-fill"></i>Juegos Online</li>
+                                            <li><i class="ri-close-fill"></i>M&uacute;sica & Pel&iacute;culas</li>
+
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn-accept">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="ri-rocket-fill fa"></i>
+                                    </div>
+                                    <h3>Espacial</h3>
+                                    <h4><sup>$</sup>35,00<sub>/mes</sub></h4>
+                                    <div class="content-2">
+                                        <ul>
+                                            <li class="info-velocity"><i class="ri-signal-wifi-fill"></i> 150 Mbs </li>
+                                            <hr>
+                                            <li><i class="ri-check-fill"></i>Hasta 10 dispositivos</li>
+                                            <li><i class="ri-check-fill"></i>Instalaci&oacute;n gratis</li>
+                                            <li><i class="ri-check-fill"></i>Redes Sociales</li>
+                                            <li><i class="ri-check-fill"></i>Juegos Online</li>
+                                            <li><i class="ri-check-fill"></i>M&uacute;sica & Pel&iacute;culas</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn-accept">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--==========================CARDS================================-->
+                <section class="section__plan" id="content2">
+                    <div class="containerC container grid">
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="ri-star-fill fa"></i>
+                                    </div>
+                                    <h3>Super Estrella</h3>
+                                    <h4><sup>$</sup>45,00<sub>/mes</sub></h4>
+                                    <div class="content-2">
+                                        <ul>
+                                            <li class="info-velocity"><i class="ri-signal-wifi-2-fill"></i>200 Mbs</li>
+                                            <hr>
+                                            <li><i class="ri-check-fill"></i>M&uacute;ltiples dispositivos</li>
+                                            <li><i class="ri-check-fill"></i>Streaming 4k</li>
+                                            <li><i class="ri-check-fill"></i>Compartici&oacute;n 2:1</li>
+                                            <li><i class="ri-check-fill"></i>Cobertura total</li>
+                                            <li><i class="ri-close-fill"></i>Instalaci&oacute;n gratis</li>
+
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn-accept">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="ri-rocket-2-fill fa"></i>
+                                    </div>
+                                    <h3>Super Astro</h3>
+                                    <h4><sup>$</sup>65,00<sub>/mes</sub></h4>
+                                    <div class="content-2">
+                                        <ul>
+                                            <li class="info-velocity"><i class="ri-signal-wifi-3-fill"></i>250 Mbs</li>
+                                            <hr>
+                                            <li><i class="ri-check-fill"></i>M&uacute;ltiples dispositivos</li>
+                                            <li><i class="ri-check-fill"></i>Streaming 4k</li>
+                                            <li><i class="ri-check-fill"></i>Compartici&oacute;n 2:1</li>
+                                            <li><i class="ri-check-fill"></i>Cobertura total</li>
+                                            <li><i class="ri-close-fill"></i>Instalaci&oacute;n gratis</li>
+
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn-accept">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="ri-meteor-fill fa"></i>
+                                    </div>
+                                    <h3>Super Espacial</h3>
+                                    <h4><sup>$</sup>99,00<sub>/mes</sub></h4>
+                                    <div class="content-2">
+                                        <ul>
+                                            <li class="info-velocity"><i class="ri-signal-wifi-fill"></i> 300 Mbs </li>
+                                            <hr>
+                                            <li><i class="ri-check-fill"></i>M&uacute;ltiples dispositivos</li>
+                                            <li><i class="ri-check-fill"></i>Streaming 4k</li>
+                                            <li><i class="ri-check-fill"></i>Compartici&oacute;n 2:1</li>
+                                            <li><i class="ri-check-fill"></i>Cobertura total</li>
+                                            <li><i class="ri-check-fill"></i>Instalaci&oacute;n gratis</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn-accept">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section__plan section" id="content3">
+                    <!--==========================CARDS================================-->
+                    <div class="containerC container grid">
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="ri-building-line fa"></i>
+                                    </div>
+                                    <h3>Corp 1</h3>
+                                    <h4><sup>$</sup>45,00<sub>/mes</sub></h4>
+                                    <div class="content-2">
+                                        <ul>
+                                            <li class="info-velocity"><i class="ri-signal-wifi-2-fill"></i>60 Mbs</li>
+                                            <hr>
+                                            <li><i class="ri-check-fill"></i>M&uacute;ltiples dispositivos</li>
+                                            <li><i class="ri-check-fill"></i>Ancho de banda sim&eacute;trico</li>
+                                            <li><i class="ri-check-fill"></i>Compartici&oacute;n 1:1</li>
+                                            <li><i class="ri-close-fill"></i>Soporte Online</li>
+                                            <li><i class="ri-close-fill"></i>Instalaci&oacute;n gratis</li>
+
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn-accept">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="ri-building-4-line fa"></i>
+                                    </div>
+                                    <h3>Corp 2</h3>
+                                    <h4><sup>$</sup>75,00<sub>/mes</sub></h4>
+                                    <div class="content-2">
+                                        <ul>
+                                            <li class="info-velocity"><i class="ri-signal-wifi-3-fill"></i>100 Mbs</li>
+                                            <hr>
+                                            <li><i class="ri-check-fill"></i>M&uacute;ltiples dispositivos</li>
+                                            <li><i class="ri-check-fill"></i>Ancho de banda sim&eacute;trico</li>
+                                            <li><i class="ri-check-fill"></i>Compartici&oacute;n 1:1</li>
+                                            <li><i class="ri-check-fill"></i>Soporte Online</li>
+                                            <li><i class="ri-close-fill"></i>Instalaci&oacute;n gratis</li>
+
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn-accept">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="ri-hotel-line fa"></i>
+                                    </div>
+                                    <h3>Corp 3</h3>
+                                    <h4><sup>$</sup>99,00<sub>/mes</sub></h4>
+                                    <div class="content-2">
+                                        <ul>
+                                            <li class="info-velocity"><i class="ri-signal-wifi-fill"></i> 125 Mbs </li>
+                                            <hr>
+                                            <li><i class="ri-check-fill"></i>M&uacute;ltiples dispositivos</li>
+                                            <li><i class="ri-check-fill"></i>Ancho de banda sim&eacute;trico</li>
+                                            <li><i class="ri-check-fill"></i>Compartici&oacute;n 1:1</li>
+                                            <li><i class="ri-check-fill"></i>Soporte Online</li>
+                                            <li><i class="ri-check-fill"></i>Instalaci&oacute;n gratis</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn-accept">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="section__plan" id="content4">
+                    <p>
+                        Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin
+                        turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball
+                        kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
+                    </p>
+                    <p>
+                        Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto
+                        pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+                    </p>
+                </section>
+
+                <p class="restriction__plan">
+                    Cumpliendo con la disposición especificada en la <a href="https://www.gob.ec/sites/default/files/regulations/2019-06/Documento_%20LEY%20ORGANICA%20DE%20LAS%20PERSONAS%20ADULTAS%20MAYORES.pdf" target="_blank ">Ley Orgánica de las Personas Adultas Mayores</a>,
+                    así como la <a href="https://www.consejodiscapacidades.gob.ec/wp-content/uploads/downloads/2016/06/Ley-Organica-de-Discapacidades.pdf" target="_blank ">Ley Orgánica de Discapacidades</a>, Astronetv comunica a sus clientes la disponibilidad
+                    de planes de internet con una rebaja del Cincuenta por ciento (50%) para personas de la tercera edad y personas con discapacidad (discapacidad del 30% o mayor).
+                </p>
+
+            </main>
+        </section>
+
+        <!--====================Redes Sociales=======================-->
+        <section class="redes section ">
+            <h2 class="section__title ">Redes Sociales</h2>
+            <span class="section__subtitle ">Siguenos o escríbenos en nuestras redes sociales</span>
+
+            <div class="social__container container grid section__border">
+                <div class="social__icon facebook ">
+                    <div class="tooltip ">Facebook</div>
+                    <a href="https://www.facebook.com/AstroNet.internet " target="_blank "><i class="ri-facebook-fill "></i></a>
+                </div>
+                <div class="social__icon instagram ">
+                    <div class="tooltip ">Instagram</div>
+                    <a href="https://www.instagram.com/astronet.internet/ " target="_blank "><i class="ri-instagram-fill "></i></a>
+                </div>
+                <div class="social__icon whatsapp ">
+                    <div class="tooltip ">Whatsapp</div>
+                    <a href="https://wa.me/+593995353096?text=Hola, deseo mas informacion " target="_blank "><i class="ri-whatsapp-fill"></i></a>
+                </div>
+                <div class="social__icon tiktok ">
+                    <div class="tooltip ">TikTok</div>
+                    <a href="https://www.tiktok.com/@astronetv" target="_blank "><i class="ri-tumblr-fill"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--=================Contacts=========================-->
+        <section class="contactos section ">
+            <h2 class="section__title ">Contactos</h2>
+            <span class="section__subtitle ">Cant&aacute;ctanos para mas informaci&oacute;n</span>
+            <div class="contact__container container grid section__border">
+                <div class="contact__container ">
+                    <h3 class="contact__title ">
+                        <i class="ri-chat-3-line "></i>Servicio T&eacute;cnico
+                    </h3>
+                    <div class="contact__info ">
+                        <div class="contact__data ">
+                            <span class="contact__data-title ">Email</span>
+                            <span class="contact__data-info ">ventas@astronet.ec</span>
+                        </div>
+                        <div class="contact__data ">
+                            <span class="contact__data-title ">Whatsapp</span>
+                            <span class="contact__data-info ">+593 995353096</span>
+                            <a href="https://wa.me/+593995353096?text=Hola, deseo mas informacion " target="_blank " class="contact__button">
+                                Escribanos <i class="ri-arrow-right-line "></i>
+                            </a>
+                        </div>
+                        <div class="contact__data ">
+                            <span class="contact__data-title ">Messenger</span>
+                            <span class="contact__data-info ">@AstroNet.internet  </span>
+                            <a href="https://www.facebook.com/AstroNet.internet" target="_blank " class="contact__button">
+                                Escribanos <i class="ri-arrow-right-line "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__container">
+                    <h3 class="contact__title ">
+                        <i class="ri-send-plane-line "></i> Escribenos para consultas & contratos
+                    </h3>
+                    <form action="" class="contact__form " id="contact__form">
+                        <div class="contact__form-div ">
+                            <label class="contact__form-tag ">Nombre y Apellido</label>
+                            <input type="text" name="user_name" required placeholder="Introduzca su nombre y apellido" class="contact__form-input" id="contact__name">
+                        </div>
+                        <div class="contact__form-div ">
+                            <label class="contact__form-tag ">Celular</label>
+                            <input type="text" name="user_phone" required placeholder="Introduzca su numero de celular" class="contact__form-input" id="contact__phone">
+                        </div>
+                        <div class="contact__form-div contact__form-area ">
+                            <label class="contact__form-tag ">Asunto</label>
+                            <textarea name="user_project" id="contact__project" placeholder="Introduzca el motivo de su mensaje" class="contact__form-input"></textarea>
+                        </div>
+                        <p class="contact__message" id="contact__message">
+
+                        </p>
+                        <button type="submit" class="contact__button">
+                            Enviar <i class="ri-arrow-right-up-line "></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=======================Pie de pagina================================-->
+    <footer class="pie-pagina">
+        <div class="group-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../static/img/logo-B.png" alt="logo de Slee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Vis&iacute;tanos</h2>
+                <p>Mall del Río, Junto a la Gasolinera Vista Linda</p>
+                <p>Cuenca - Azuay</p>
+            </div>
+            <div class="box">
+                <h2>Ayuda al cliente</h2>
+                <p><a href="#">Quienes somos</a></p>
+                <p><a href="#">Contactos</a></p>
+                <p><a href="#">Trabaja con nosotros</a></p>
+                <p><a href="#">Responsabilidad social</a></p>
+            </div>
+            <div class="box">
+                <h2>Prueba de velocidad</h2>
+                <div class="social-red ">
+                    <a href="https://fast.com/es/" target="_blank" class="home__footer-counter">
+                        <img src="../static/img/fast-logo.png" alt="" class="fast__test-img">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="group-2">
+            <small>Copyright 2022 &copy; - Todos los Derechos Reservados | Design by Astronet</small>
+        </div>
+    </footer>
+
+    <!--========================SCROLL UP=======================================-->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../static/scripts/theme_mode.js"></script>
+    <script src="../static/scripts/scrollup.js"></script>
+    <!--=========================EMAIL JS================================-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../static/scripts/main.js"></script>
+</body>
+
+</html>

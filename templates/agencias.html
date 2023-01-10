@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Astronet - Inicio</title>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../static/img/icono.ico" type="image/x-icon">
+
+    <!--REMIXICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/agencias.css">
+    <link rel="stylesheet" href="../Leaflet.Legend-master/src/leaflet.legend.css">
+
+    <!--leaflet MAP-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+
+<body>
+    <!--================HEADER======================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav__logo">
+                <img src="../static/img/logo.png" alt="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link ">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../templates/planes.html" class="nav__link">Planes</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../templates/cobertura.html" class="nav__link">Cobertura</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">Agencias</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../templates/about.html" class="nav__link">Nosotros</a>
+                    </li>
+                </ul>
+
+                <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!-- Toggle Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--================MAIN======================-->
+    <main class="main">
+        <section class="home">
+            <div class="home__shape-small"></div>
+            <div class="home__shape-big-1"></div>
+            <div class="home__shape-big-2"></div>
+            <img src="../static/files/azul-oscuro-2.jpg" alt="" class="home__shape-bg">
+            <div class="home__container container grid">
+                <div class="home__info">
+                    <h1 class="home__title">
+                        <span>Astronet</span> <br> Cubrimos todo <br>el Austro.
+                    </h1>
+                    <p class="home__description">
+                        <strong>+</strong>Cobertura <strong>+</strong>Velocidad <strong>+</strong>Megas.
+                    </p>
+                    <a href="#" class="home__button">CONTRATAR</a>
+                </div>
+                <div class="home__group">
+                    <div class="home__images">
+                        <div class="home__img-eth">
+                            <img src="../static/img/robot-A.png" alt="home image">
+                        </div>
+                    </div>
+                    <div class="home__data">
+                        <div>
+                            <h2 class="home__data-number">+5</h2>
+                            <span class="home__data-subtitle">Oficinas</span>
+                        </div>
+                        <div>
+                            <h2 class="home__data-number">100%</h2>
+                            <span class="home__data-subtitle">Cobertura</span>
+                        </div>
+                        <div>
+                            <h2 class="home__data-number">2000+</h2>
+                            <span class="home__data-subtitle">Socios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__footer">
+                    <div>
+                        <h3 class="home__footer-number">
+                            <a href="tel:0986247908" class="home__footer-number">0986247908</a>
+                        </h3>
+                        <span class="home__footer-subtitle">Servicio al cliente</span>
+                    </div>
+
+                    <div>
+                        <div class="home__footer-time">
+                            <div class="home__footer-counter">
+                                <a href="https://www.instagram.com/astronet.internet/" target="_blank" class="home__footer-counter"><i class="ri-instagram-line"></i></a>
+
+                            </div>
+                            <div class="home__footer-counter">
+                                <a href="https://www.facebook.com/AstroNet.internet" target="_blank" class="home__footer-counter"><i class="ri-facebook-circle-line"></i></a>
+                            </div>
+                        </div>
+                        <span class="home__footer-subtitle">Redes sociales</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--========================Agencias===============================-->
+        <section class="agencia section">
+            <h2 class="section__title">Agencias AstroNet</h2>
+            <span class="section__subtitle">Tenemos oficinas m&aacute;s cerca de t&iacute;</span>
+
+            <main class="section__border">
+                <input class="icon__cobertura" id="tab1" onclick="Location('-2.920700, -79.021150')" type="radio" name="tabs" checked>
+                <label class="label__cobertura" for="tab1">Matriz</label>
+
+                <input class="icon__cobertura" id="tab4" onclick="Location('-2.899794, -79.027040')" type="radio" name="tabs">
+                <label class="label__cobertura" for="tab4">Feria Libre</label>
+
+                <input class="icon__cobertura" id="tab5" onclick="Location('-2.938729, -78.965074')" type="radio" name="tabs">
+                <label class="label__cobertura" for="tab5">El Valle</label>
+
+                <input class="icon__cobertura" id="tab2" onclick="Location('-3.011998, -79.039572')" type="radio" name="tabs">
+                <label class="label__cobertura" for="tab2">Tarqui</label>
+
+                <input class="icon__cobertura" id="tab3" onclick="Location('-2.851688, -79.014362')" type="radio" name="tabs">
+                <label class="label__cobertura" for="tab3">Sinincay</label>
+
+                <input class="icon__cobertura" id="tab6" onclick="Location('-3.147568, -79.251701')" type="radio" name="tabs">
+                <label class="label__cobertura" for="tab6">San Fernando</label>
+
+                <section class="map__cobertura" id="content1">
+                    <p class="info__agencias">
+                        Click sobre el indicador 📍 para mas informaci&oacute;n
+                    </p>
+                    <div class="container__map">
+                        <div class="map" id="map"></div>
+                    </div>
+                </section>
+
+                <div class="agencias__container container grid ">
+                    <div class="">
+                        <div class="agencias__info">
+                            <div class="agencias__data ">
+                                <span class="agencias__data-title ">Matriz</span>
+                                <span class="agencias__data-info"><i class="ri-map-pin-line"></i> Autopista Cuenca-Azogues,<br>a 200m del Mall del Rio,<br>junto a la gasolinera vista linda.</span>
+                                <span class="agencias__data-info "><a href="tel:07440500" class="agencias__button"><i class="ri-phone-line"></i>07 440500</a></span>
+                            </div>
+                            <div class="agencias__data ">
+                                <span class="agencias__data-title ">Feria libre</span>
+                                <span class="agencias__data-info "><i class="ri-map-pin-line"></i> Av de las americas y <br>calle Ecuador<br>frente almacenes TIA.</span>
+                                <span class="agencias__data-info "><a href="tel:0989259765" class="agencias__button"><i class="ri-phone-line"></i>098 925 9765</a></span>
+                            </div>
+                            <div class="agencias__data ">
+                                <span class="agencias__data-title ">Sinincay</span>
+                                <span class="agencias__data-info "><i class="ri-map-pin-line"></i> Calle Sacerdote Gonzalo V&aacute;squez<br>y Honorato Bravo,<br>detr&aacute;s de la iglesia.</span>
+                                <span class="agencias__data-info "><a href="tel:0985665052" class="agencias__button"><i class="ri-phone-line"></i>098 566 5052</a></span>
+                            </div>
+                            <div class="agencias__data ">
+                                <span class="agencias__data-title ">El Valle</span>
+                                <span class="agencias__data-info "><i class="ri-map-pin-line"></i> Subida a las Pencas,<br>diagonal al centro de especialidades<br>m&eacute;dicas Medivalle.</span>
+                                <span class="agencias__data-info "><a href="tel:0994886559" class="agencias__button"><i class="ri-phone-line"></i>099 488 6559</a></span>
+                            </div>
+                            <div class="agencias__data ">
+                                <span class="agencias__data-title ">Tarqui</span>
+                                <span class="agencias__data-info "><i class="ri-map-pin-line"></i> V&iacute;a Cuenca-Giron,<br>a una cuadra de<br>la entrada a Tarqui.</span>
+                                <span class="agencias__data-info "><a href="tel:0982631868" class="agencias__button"><i class="ri-phone-line"></i>098 263 1868</a></span>
+                            </div>
+                            <div class="agencias__data ">
+                                <span class="agencias__data-title ">San Fernando</span>
+                                <span class="agencias__data-info "><i class="ri-map-pin-line"></i> Calle Jos&eacute; Mari&aacute; Quito<br>y Sim&oacute;n Bol&iacute;var</span>
+                                <span class="agencias__data-info "><a href="tel:0999161757" class="agencias__button"><i class="ri-phone-line"></i>099 916 1757</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <!--====================Redes Sociales=======================-->
+        <section class="redes section ">
+            <h2 class="section__title ">Redes Sociales</h2>
+            <span class="section__subtitle ">Siguenos o escríbenos en nuestras redes sociales</span>
+
+            <div class="social__container container grid section__border">
+                <div class="social__icon facebook ">
+                    <div class="tooltip ">Facebook</div>
+                    <a href="https://www.facebook.com/AstroNet.internet " target="_blank "><i class="ri-facebook-fill "></i></a>
+                </div>
+                <div class="social__icon instagram ">
+                    <div class="tooltip ">Instagram</div>
+                    <a href="https://www.instagram.com/astronet.internet/ " target="_blank "><i class="ri-instagram-fill "></i></a>
+                </div>
+                <div class="social__icon whatsapp ">
+                    <div class="tooltip ">Whatsapp</div>
+                    <a href="https://wa.me/+593995353096?text=Hola, deseo mas informacion" target="_blank "><i class="ri-whatsapp-fill"></i></a>
+                </div>
+                <div class="social__icon tiktok ">
+                    <div class="tooltip ">TikTok</div>
+                    <a href="https://www.tiktok.com/@astronetv" target="_blank "><i class="ri-tumblr-fill"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--=================Contacts=========================-->
+        <section class="contactos section ">
+            <h2 class="section__title ">Contactos</h2>
+            <span class="section__subtitle ">Cant&aacute;ctanos para mas informaci&oacute;n</span>
+            <div class="contact__container container grid section__border">
+                <div class="contact__container ">
+                    <h3 class="contact__title ">
+                        <i class="ri-chat-3-line "></i>Servicio T&eacute;cnico
+                    </h3>
+                    <div class="contact__info ">
+                        <div class="contact__data ">
+                            <span class="contact__data-title ">Email</span>
+                            <span class="contact__data-info ">ventas@astronet.ec</span>
+                        </div>
+                        <div class="contact__data ">
+                            <span class="contact__data-title ">Whatsapp</span>
+                            <span class="contact__data-info ">+593 995353096</span>
+                            <a href="https://wa.me/+593995353096?text=Hola, deseo mas informacion " target="_blank " class="contact__button">
+                                Escribanos <i class="ri-arrow-right-line "></i>
+                            </a>
+                        </div>
+                        <div class="contact__data ">
+                            <span class="contact__data-title ">Messenger</span>
+                            <span class="contact__data-info ">@AstroNet.internet  </span>
+                            <a href="https://www.facebook.com/AstroNet.internet" target="_blank " class="contact__button">
+                                Escribanos <i class="ri-arrow-right-line "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__container">
+                    <h3 class="contact__title ">
+                        <i class="ri-send-plane-line "></i> Escribenos para consultas & contratos
+                    </h3>
+                    <form action="" class="contact__form " id="contact__form">
+                        <div class="contact__form-div ">
+                            <label class="contact__form-tag ">Nombre y Apellido</label>
+                            <input type="text" name="user_name" required placeholder="Introduzca su nombre y apellido" class="contact__form-input" id="contact__name">
+                        </div>
+                        <div class="contact__form-div ">
+                            <label class="contact__form-tag ">Celular</label>
+                            <input type="text" name="user_phone" required placeholder="Introduzca su numero de celular" class="contact__form-input" id="contact__phone">
+                        </div>
+                        <div class="contact__form-div contact__form-area ">
+                            <label class="contact__form-tag ">Asunto</label>
+                            <textarea name="user_project" id="contact__project" placeholder="Introduzca el motivo de su mensaje" class="contact__form-input "></textarea>
+                        </div>
+                        <p class="contact__message" id="contact__message">
+
+                        </p>
+                        <button type="submit" class="contact__button">
+                            Enviar <i class="ri-arrow-right-up-line "></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--<div class="container__map">
+            <div class="map" id="map"></div>
+        </div>
+        -->
+
+    <!--=======================Pie de pagina================================-->
+    <footer class="pie-pagina">
+        <div class="group-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../static/img/logo-B.png" alt="logo de Slee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Vis&iacute;tanos</h2>
+                <p>Mall del Río, Junto a la Gasolinera Vista Linda</p>
+                <p>Cuenca - Azuay</p>
+            </div>
+            <div class="box">
+                <h2>Ayuda al cliente</h2>
+                <p><a href="#">Quienes somos</a></p>
+                <p><a href="#">Contactos</a></p>
+                <p><a href="#">Trabaja con nosotros</a></p>
+                <p><a href="#">Responsabilidad social</a></p>
+            </div>
+            <div class="box">
+                <h2>Prueba de velocidad</h2>
+                <div class="social-red ">
+                    <a href="https://fast.com/es/" target="_blank" class="home__footer-counter">
+                        <img src="../static/img/fast-logo.png" alt="" class="fast__test-img">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="group-2">
+            <small>Copyright 2022 &copy; - Todos los Derechos Reservados | Design by Astronet</small>
+        </div>
+    </footer>
+
+    <!--========================SCROLL UP=======================================-->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../Leaflet.Legend-master/src/leaflet.legend.js "></script>
+    <script src="../static/scripts/agencias.js"></script>
+    <script src="../static/scripts/theme_mode.js "></script>
+    <script src="../static/scripts/scrollup.js "></script>
+    <!--=========================EMAIL JS================================-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../static/scripts/main.js"></script>
+</body>
+
+</html>

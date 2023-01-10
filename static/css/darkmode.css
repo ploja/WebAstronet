@@ -1,0 +1,12 @@
+:root {
+    --first-color: hsl(203, 68%, 40%);
+    --second-color: #FF2C3B;
+    --third-color: #171717;
+    --text-color: hsl(203, 8%, 98%);
+    --text-color-light: hsl(0, 0%, 100%);
+    --body-color: #111820;
+    --mode-color: hsla(203, 69%, 20%, 0.726);
+    --button-color: #DF0E0E;
+    --card-box-color: #171717;
+    --card-line-separator: hsl(203, 69%, 20%);
+}

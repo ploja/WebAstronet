@@ -1,0 +1,161 @@
+.agencia p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+.agencia {
+    min-width: 330px;
+    max-width: 1040px;
+    padding: 10px;
+    margin: 25px auto;
+    background: transparent;
+}
+
+.agencia .map__cobertura {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--card-line-separator);
+}
+
+.agencia .icon__cobertura {
+    display: none;
+}
+
+.agencia .label__cobertura {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+.label__cobertura:before {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.label__cobertura:hover {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.icon__cobertura:checked+.label__cobertura {
+    color: var(--text-color);
+    border: 1px solid var(--card-line-separator);
+    border-top: 2px solid var(--second-color);
+    border-bottom: 1px solid var(--body-color);
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content1,
+#tab3:checked~#content1,
+#tab4:checked~#content1,
+#tab5:checked~#content1,
+#tab6:checked~#content1,
+#tab7:checked~#content1 {
+    display: block;
+}
+
+.info__agencias {
+    text-align: justify;
+    font-size: var(--smaller-font-size);
+    color: #9b9c9e;
+}
+
+@media screen and (max-width: 650px) {
+    .label__cobertura {
+        font-size: 10px;
+    }
+    .label__cobertura:before {
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .label__cobertura {
+        padding: 5px;
+    }
+}
+
+.agencia .container__map {
+    overflow: hidden;
+    /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+    padding-bottom: 500px;
+    position: relative;
+}
+
+.agencia .container__map .map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.agencia .agencias__info {
+    row-gap: 3.5rem;
+}
+
+.agencias__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 2.5rem;
+}
+
+.agencias__title i {
+    font-size: 1rem;
+    font-weight: initial;
+}
+
+.agencias__info,
+.agencias__data,
+.agencias__form {
+    display: grid;
+}
+
+.agencias__container {
+    margin-top: 25px;
+}
+
+.agencias__info {
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.agencias__data {
+    row-gap: .5rem;
+}
+
+.agencias__data-title {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+.agencias__data-info {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+}
+
+.agencias__button {
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    color: var(--text-color);
+    font-size: var(--smaller-font-size);
+}
+
+.agencias__button i {
+    font-size: 1rem;
+    transition: transform .3s;
+}
+
+.agencias__button:hover i {
+    transform: translateX(.25rem);
+}

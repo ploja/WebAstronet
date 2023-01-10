@@ -1,0 +1,201 @@
+@media screen and (min-width: 767px) {
+    .containerC {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+@media screen and (min-width: 1048px) {
+    .containerC {
+        grid-template-columns: repeat(3, max-content);
+    }
+}
+
+.containerC {
+    row-gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.containerC .card {
+    position: relative;
+    width: 320px;
+    height: 540px;
+    background: #ff2c3a00;
+    /*box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);*/
+    margin: 15px;
+    padding: 2rem 2rem;
+}
+
+.position-absolute {
+    position: absolute!important;
+}
+
+.p-2 {
+    padding: 0.2rem!important;
+}
+
+.containerC .price-badge {
+    top: -13px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: var(--text-color-light);
+}
+
+.containerC .badge-inverse {
+    background-color: #3e4555;
+}
+
+.containerC .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: var(--card-box-color);
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.containerC .card:hover .box {
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.containerC .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.containerC .card .box .content .content-2 {
+    text-align: justify;
+}
+
+.containerC .card .box .content .icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #0e69c4;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    color: var(--text-color-light);
+}
+
+.containerC .card .box .content .icon .fa {
+    font-size: 2em;
+}
+
+.containerC .card .box .content h3 {
+    font-size: 1.3em;
+    color: var(--text-color-);
+    font-weight: 300;
+}
+
+.containerC .card .box .content h4 {
+    color: var(--text-color-);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.containerC .card .box .content h4 sup {
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.containerC .card .box .content h4 sub {
+    font-size: 0.35em;
+    font-weight: 300;
+}
+
+.containerC .card .box .content .content-2 ul {
+    position: relative;
+}
+
+.containerC .card .box .content .content-2 ul li {
+    list-style: none;
+    color: var(--text-color-);
+    margin: 15px 10px;
+}
+
+.containerC .card .box .content .content-2 ul .info-velocity {
+    list-style: none;
+    color: var(--text-color-);
+    text-align: center;
+    font-size: 20px;
+    font-weight: var(--font-semi-bold);
+    margin-top: 5px;
+}
+
+.containerC .card .box .content .content-2 ul li .ri-signal-wifi-2-fill {
+    color: var(--text-color-);
+    padding-right: 10px;
+}
+
+.containerC .card .box .content .content-2 ul li .ri-signal-wifi-3-fill {
+    color: var(--text-color-);
+    padding-right: 10px;
+}
+
+.containerC .card .box .content .content-2 ul li .ri-signal-wifi-fill {
+    color: var(--text-color-);
+    padding-right: 10px;
+}
+
+.containerC .card .box .content .content-2 hr {
+    border: 1px solid var(--card-line-separator);
+}
+
+.containerC .card .box .content .content-2 ul li .ri-check-fill {
+    color: #0ed315;
+    padding-right: 10px;
+}
+
+.containerC .card .box .content .content-2 ul li .ri-close-fill {
+    color: #FF2C3B;
+    padding-right: 10px;
+}
+
+.containerC .card .box .content .btn-accept {
+    position: relative;
+    display: inline-block;
+    padding: 20px 75px;
+    margin-top: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    background: var(--button-plan);
+}
+
+.containerC .card .box .content .btn-accept:hover {
+    background: var(--button-plan-hover);
+}
+
+.containerC .card:nth-child(1) .box .content .icon {
+    background: var(--button-color);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.containerC .card:nth-child(2) .box .content .icon {
+    background: var(--second-color);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.containerC .card:nth-child(3) .box .content .icon {
+    background: var(--first-color);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}

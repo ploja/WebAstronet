@@ -1,0 +1,12 @@
+:root {
+    --first-color: #DF0E0E;
+    --second-color: #FF2C3B;
+    --third-color: #171717;
+    --text-color: #030303;
+    --text-color-light: hsl(0, 0%, 100%);
+    --body-color: hsl(0, 0%, 98%);
+    --mode-color: #ff2c3a96;
+    --button-color: #ff6a5b;
+    --card-box-color: #f4f8fa;
+    --card-line-separator: #ddd;
+}
