@@ -64,23 +64,7 @@
     color: #9b9c9e;
 }
 
-@media screen and (max-width: 650px) {
-    .label__cobertura {
-        font-size: 10px;
-    }
-    .label__cobertura:before {
-        margin: 0;
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .label__cobertura {
-        padding: 5px;
-    }
-}
-
-.agencia .container__map {
+.container__map {
     overflow: hidden;
     /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
     padding-bottom: 500px;
@@ -124,12 +108,14 @@
 }
 
 .agencias__info {
-    row-gap: 2rem;
+    padding: 10px;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .agencias__data {
-    row-gap: .5rem;
+    max-width: 250px;
+    text-align: justify;
+    padding: 10px;
 }
 
 .agencias__data-title {
@@ -158,4 +144,26 @@
 
 .agencias__button:hover i {
     transform: translateX(.25rem);
+}
+
+@media screen and (max-width: 650px) {
+    .label__cobertura {
+        font-size: 10px;
+    }
+    .label__cobertura:before {
+        margin: 0;
+        font-size: 10px;
+    }
+    .agencias__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .label__cobertura {
+        padding: 5px;
+    }
+    .agencias__info {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
